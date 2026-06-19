@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="stylecadastro.css">
+
+</head>
+
+<body>
+   <header class="loja-header">
+        <div class="header-topo">
+            <div class="logo-container">
+                <img src="imagens-peixes/baiacu1-removebg-preview.png" alt="Baiacu Logo" class="logo-img">
+                <h1 class="logo-texto">Peixaria Baiacu</h1>
+            </div>
+
+            <div class="pesquisa-container">
+                <input type="text" id="input-pesquisa" placeholder="Procurar peixes, moluscos...">
+                <button id="btn-pesquisa" class="btn-stardew">🔎</button>
+            </div>
+
+            <nav class="nav-principal">
+                <ul>
+                    <li><a href="login.html" id="tela-login">Login</a></li>
+                    <li><a href="cadastro.html" id="tela-cadastro">Cadastro</a></li>
+                    <li><a href="relatorios.html" id="menu-admin">Painel Admin</a></li>
+                </ul>
+            </nav>
+
+            <div class="acoes-utilizador">
+    
+
+                <div class="conta-container">
+                    <button id="btn-conta" class="icone-btn" title="A minha conta">👤</button>
+                    <div id="menu-conta" class="dropdown-content escondido">
+                       <p class="dropdown-titulo">Olá, <span id="nome-usuario">Fazendeiro</span>!</p>
+                        <hr class="linha-pixel">
+                        <a href="login.html" id="login-cadastro">Entrar / Cadastrar</a>
+                        <a href="#">Minha Conta</a>
+                        <a href="index.html" id="btn-sair" class="texto-sair">Sair</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="header-categorias">
+            <a href="index.html" class="categoria-link">Home</a>
+            <a href="loja.html" class="categoria-link">Todos os Produtos</a>
+        </nav>
+    </header>
+
+
+    <main>
+        
+        <form id="formCadastro">
+            <h2>Crie sua Conta</h2>
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required placeholder="Digite sua senha">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00">
+            </div>
+
+            <br>
+
+            <div>
+                <button type="submit" id="btn-cadastrar">Cadastrar</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="loja-rodape">
+        <div class="rodape-container">
+            
+            <div class="rodape-coluna">
+                <h3>Peixaria Baiacu</h3>
+                <p>Os peixes mais frescos do Vale do Orvalho. Pescados hoje, na sua mesa amanhã.</p>
+            </div>
+
+            <div class="rodape-coluna">
+                <h3>Navegação</h3>
+                <a href="index.html">Início</a>
+                <a href="loja.html">Nossos Produtos</a>
+                <a href="login.html">Minha Conta</a>
+            </div>
+
+            <div class="rodape-coluna">
+                <h3>Contato</h3>
+                <p>📍 Praia Sul, Stardew Valley</p>
+                <p>📧 peixepeixe@baiacu.com</p>
+                <p>📞 (00) 1234-5678</p>
+            </div>
+
+        </div>
+        <div class="rodape-direitos">
+            <p>&copy; 2026 Peixaria Baiacu. Trabalho Acadêmico.</p>
+        </div>
+    </footer>
+
+
+    <script src="js/cadastro.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="stylerelatorios.css">
+
+</head>
+
+<body>
+     <header class="loja-header">
+        <div class="header-topo">
+            <div class="logo-container">
+                <img src="imagens-peixes/baiacu1-removebg-preview.png" alt="Baiacu Logo" class="logo-img">
+                <h1 class="logo-texto">Peixaria Baiacu</h1>
+            </div>
+
+            <div class="paineladm-container">
+                <img src="imagens-peixes/lagosta-removebg-preview.png" alt="Lagosta" class="peixe-esq-img">
+                <h2 class="paineladm-texto">Painel do Administrador</h2>
+                <img src="imagens-peixes/lagosta-removebg-preview.png" alt="Lagosta" class="peixe-dir-img">
+
+            </div>
+
+             <nav class="nav-principal">
+                <ul>
+                    <li><a href="index.html">Voltar a Tela Inicial</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+        
+        <div class="rel-clientes-container">
+
+            <h2 class="titulo-relatorio">Lista de Clientes</h2>
+                <div class="pesquisa-container-clientes">
+                    <input type="text" id="input-pesquisa" placeholder="Procurar por nome, CPF, ID ou email.">
+                    <button id="btn-pesquisa" class="btn-stardew">🔎</button>
+                </div>
+            <div class="lista-clientes">
+            <table class="tabela-admin">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>E-mail</th>
+                        <th>Ações</th> 
+                    </tr>
+                </thead>
+                <tbody id="corpo-tabela-clientes">
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+            <div class="rel-compras-container">
+
+            <h2 class="titulo-relatorio">Lista de Compras</h2>
+                <div class="pesquisa-container-compras">
+                    <input type="text" id="input-pesquisa" placeholder="Procurar por ID, cliente, data, valor ou produto.">
+                    <button id="btn-pesquisa" class="btn-stardew">🔎</button>
+                </div>
+            <div class="lista-compras">
+            <table class="tabela-compras">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Cliente</th>
+                        <th>Data</th>
+                        <th>Valor</th>
+                        <th>Produto</th> 
+                    </tr>
+                </thead>
+                <tbody id="corpo-tabela-compras">
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+    </main>
+
+    <footer class="loja-rodape">
+        <div class="rodape-container">
+        
+            <div class="rodape-coluna">
+                <h3>Peixaria Baiacu</h3>
+            </div>
+
+            <div class="rodape-admin">
+                <p>Emitido em: <span id="data-hora-emissao"></span> | ⚠️ Documento Confidencial</p>
+            </div>
+    
+            </div> 
+            <div class="rodape-direitos">
+                <p>&copy; 2026 Peixaria Baiacu. Trabalho Acadêmico.</p>
+            </div>
+
+    </footer>
+
+
+    <script src="js/relatorio.js"></script>
+</body>
+
+</html>
