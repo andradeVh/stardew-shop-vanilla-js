@@ -8,7 +8,7 @@ Esse projeto fez parte da avaliação final da disciplina de Programação Front
 
 O sistema conta com catálogo, carrinho, finalização de compra e uma interface exclusiva para o administrador gerir clientes e relatórios simples de vendas.
 
-[Link para o pdf do projeto](https://github.com/andradeVh/IFSC-ADS-REPO/tree/main/Semestre%202/Programa%C3%A7%C3%A3o%20Frontend%20I).
+[Link para o pdf do projeto](https://github.com/andradeVh/IFSC-ADS-REPO/tree/main/Semestre%202/Programa%C3%A7%C3%A3o%20Frontend%20I/Projeto_02.pdf).
 
 ---
 ## Imagens
